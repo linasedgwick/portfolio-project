@@ -18,8 +18,16 @@ h1,
 h2,
 h3 {
   font-family: var(--heading-font-family);
+  font-weight: bold;
 }
 
+h2 {
+  font-size: 56px;
+}
+p {
+  font-weight: normal;
+  font-size: 16px;
+}
 .hero-wrapper {
   text-align: center;
   padding: 299px 20px;
@@ -32,6 +40,10 @@ h3 {
   font-family: var(--default-font-family);
   font-size: 24px;
   margin-bottom: 49px;
+}
+.featured-projects p {
+  text-align: center;
+  font-size: 18px;
 }
 .contact-btn {
   color: var(--primary-color);
