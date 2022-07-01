@@ -28,9 +28,12 @@ p {
   font-weight: normal;
   font-size: 16px;
 }
+img {
+  border-radius: 4px;
+}
 .hero-wrapper {
   text-align: center;
-  padding: 299px 20px;
+  padding: 275px 375px;
 }
 .hero-wrapper h1 {
   font-size: 96px;
@@ -41,20 +44,33 @@ p {
   font-size: 24px;
   margin-bottom: 49px;
 }
-.featured-projects p {
-  text-align: center;
-  font-size: 18px;
-}
 .contact-btn {
-  color: var(--primary-color);
-  background: var(--secondary-color);
+  color: var(--secondary-color);
+  background: var(--primary-color);
+
   text-decoration: none;
   padding: 18px 30px;
-  border-radius: 4px;
+  border-radius: 5px;
   line-height: 27px;
   transition: all 200ms ease-in-out;
 }
 .contact-btn:hover {
-  background: var(--primary-color);
-  color: var(--secondary-color);
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  border: solid 2px var(--primary-color);
+}
+
+.featured-projects h2 {
+  margin-top: 70px;
+}
+
+.featured-projects a {
+  color: var(--primary-color);
+  background: var(--secondary-color);
+  border: solid 2px var(--primary-color);
+  text-decoration: none;
+  padding: 18px 30px;
+  border-radius: 5px;
+  line-height: 27px;
+  margin-top: 30px !important;
 }
