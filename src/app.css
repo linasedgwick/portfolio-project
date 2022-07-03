@@ -22,7 +22,7 @@ h3 {
 }
 
 h2 {
-  font-size: 56px;
+  font-size: 40px;
 }
 p {
   font-weight: normal;
@@ -33,10 +33,10 @@ img {
 }
 .hero-wrapper {
   text-align: center;
-  padding: 275px 375px;
+  padding: 225px 0;
 }
 .hero-wrapper h1 {
-  font-size: 96px;
+  font-size: 86px;
   font-weight: bold;
 }
 .hero-wrapper h2 {
@@ -44,10 +44,14 @@ img {
   font-size: 24px;
   margin-bottom: 49px;
 }
+.navbar a {
+  font-family: var(--heading-font-family);
+  font-weight: bold;
+  color: var(--primary-color);
+}
 .contact-btn {
   color: var(--secondary-color);
   background: var(--primary-color);
-
   text-decoration: none;
   padding: 18px 30px;
   border-radius: 5px;
@@ -72,5 +76,31 @@ img {
   padding: 18px 30px;
   border-radius: 5px;
   line-height: 27px;
-  margin-top: 30px !important;
+}
+@media (max-width: 770px) {
+  .hero-wrapper {
+    padding: 125px 0px 50px 0px;
+  }
+  .hero-wrapper h1 {
+    font-size: 60px;
+  }
+  .hero-wrapper h2 {
+    font-size: 22px;
+    padding: 13px 20px;
+  }
+  .intro-text {
+    padding: 0 50px;
+  }
+  .contact-btn {
+    font-size: 14px;
+    padding: 15px 20px;
+  }
+  .featured-projects h2 {
+    font-size: 30px;
+  }
+  .featured-projects p,
+  .featured-projects h2,
+  .featured-projects a {
+    display: none;
+  }
 }
