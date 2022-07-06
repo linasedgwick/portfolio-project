@@ -78,10 +78,13 @@ img {
   line-height: 27px;
 }
 .about-wrapper {
-  margin: 200px 140px;
+  padding: 150px 140px;
   text-align: center;
 }
-.about-wrapper img {
+.about-wrapper h2 {
+  font-size: 20px;
+}
+.headshot {
   height: auto;
   max-height: 60%;
   border-radius: 6px;
@@ -92,10 +95,23 @@ img {
 .skillset {
   margin: 50px;
 }
-@media (max-width: 770px) {
-  .hero-wrapper {
-    padding: 125px 0px 50px 0px;
+@media (max-width: 1200px) {
+  .about-wrapper {
+    padding: 150px 100px;
   }
+  .about-wrapper p {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+  }
+  .about-wrapper .col-2 {
+    padding: 10px;
+  }
+  .skillset {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 800px) {
   .hero-wrapper h1 {
     font-size: 60px;
   }
@@ -117,5 +133,36 @@ img {
   .featured-projects h2,
   .featured-projects a {
     display: none;
+  }
+  .about-wrapper {
+    padding: 150px 60px 0px 60px;
+  }
+  .about-wrapper h1 {
+    font-size: 28px;
+  }
+  .about-wrapper h2 {
+    font-size: 15px;
+  }
+  .about-wrapper p {
+    font-size: 15px;
+  }
+
+  .about-wrapper .col-2 {
+    padding: 5px;
+  }
+  .headshot {
+    margin-top: 30px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 400px) {
+  .about-wrapper {
+    padding-top: 80px;
+    padding-bottom: 0;
+  }
+  .about-wrapper .contact-btn {
+    font-size: 12px;
+    padding: 10px;
   }
 }
