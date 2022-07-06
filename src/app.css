@@ -77,6 +77,21 @@ img {
   border-radius: 5px;
   line-height: 27px;
 }
+.about-wrapper {
+  margin: 200px 140px;
+  text-align: center;
+}
+.about-wrapper img {
+  height: auto;
+  max-height: 60%;
+  border-radius: 6px;
+}
+.about-wrapper a {
+  margin: auto;
+}
+.skillset {
+  margin: 50px;
+}
 @media (max-width: 770px) {
   .hero-wrapper {
     padding: 125px 0px 50px 0px;
