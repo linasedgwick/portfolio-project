@@ -29,7 +29,18 @@ p {
   font-size: 16px;
 }
 img {
-  border-radius: 4px;
+  border-radius: 20px;
+  height: auto;
+}
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  padding: 18px 30px;
+  border-radius: 5px;
+  line-height: 27px;
+}
+a:hover {
+  color: var(--primary-color);
 }
 .hero-wrapper {
   text-align: center;
@@ -49,18 +60,13 @@ img {
   font-weight: bold;
   color: var(--primary-color);
 }
-.contact-btn {
+.branding-btn {
   color: var(--secondary-color);
   background: var(--primary-color);
-  text-decoration: none;
-  padding: 18px 30px;
-  border-radius: 5px;
-  line-height: 27px;
   transition: all 200ms ease-in-out;
 }
-.contact-btn:hover {
+.branding-btn:hover {
   background: var(--secondary-color);
-  color: var(--primary-color);
   border: solid 2px var(--primary-color);
 }
 
@@ -69,41 +75,32 @@ img {
 }
 
 .featured-projects a {
-  color: var(--primary-color);
   background: var(--secondary-color);
   border: solid 2px var(--primary-color);
-  text-decoration: none;
-  padding: 18px 30px;
-  border-radius: 5px;
-  line-height: 27px;
 }
-.about-wrapper {
+.content-wrapper {
   padding: 150px 140px;
   text-align: center;
 }
-.about-wrapper h2 {
+.content-wrapper h2 {
   font-size: 20px;
 }
 .headshot {
-  height: auto;
   max-height: 60%;
-  border-radius: 6px;
 }
-.about-wrapper a {
-  margin: auto;
-}
+
 .skillset {
   margin: 50px;
 }
 @media (max-width: 1200px) {
-  .about-wrapper {
+  .content-wrapper {
     padding: 150px 100px;
   }
-  .about-wrapper p {
+  .content-wrapper p {
     margin-top: 20px !important;
     margin-bottom: 20px !important;
   }
-  .about-wrapper .col-2 {
+  .content-wrapper .col-2 {
     padding: 10px;
   }
   .skillset {
@@ -122,32 +119,27 @@ img {
   .intro-text {
     padding: 0 50px;
   }
-  .contact-btn {
+  .branding-btn {
     font-size: 14px;
     padding: 15px 20px;
   }
   .featured-projects h2 {
     font-size: 30px;
   }
-  .featured-projects p,
-  .featured-projects h2,
-  .featured-projects a {
+  .m-d-none {
     display: none;
   }
-  .about-wrapper {
-    padding: 150px 60px 0px 60px;
+  .content-wrapper {
+    padding: 150px 60px 0px;
   }
-  .about-wrapper h1 {
+  .content-wrapper h1 {
     font-size: 28px;
   }
-  .about-wrapper h2 {
-    font-size: 15px;
-  }
-  .about-wrapper p {
+  .font-s-ft {
     font-size: 15px;
   }
 
-  .about-wrapper .col-2 {
+  .content-wrapper .col-2 {
     padding: 5px;
   }
   .headshot {
@@ -157,11 +149,11 @@ img {
   }
 }
 @media (max-width: 400px) {
-  .about-wrapper {
+  .content-wrapper {
     padding-top: 80px;
     padding-bottom: 0;
   }
-  .about-wrapper .contact-btn {
+  .content-wrapper .branding-btn {
     font-size: 12px;
     padding: 10px;
   }
