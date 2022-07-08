@@ -35,7 +35,6 @@ img {
 a {
   color: var(--primary-color);
   text-decoration: none;
-  padding: 18px 30px;
   border-radius: 5px;
   line-height: 27px;
 }
@@ -91,6 +90,9 @@ a:hover {
 
 .skillset {
   margin: 50px;
+}
+.padding-btn {
+  padding: 18px 30px;
 }
 @media (max-width: 1200px) {
   .content-wrapper {
