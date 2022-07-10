@@ -36,14 +36,12 @@ a {
   color: var(--primary-color);
   text-decoration: none;
   border-radius: 5px;
-  line-height: 27px;
+  line-height: 23px;
 }
-a:hover {
-  color: var(--primary-color);
-}
+
 .hero-wrapper {
   text-align: center;
-  padding: 225px 0;
+  padding: 180px 0;
 }
 .hero-wrapper h1 {
   font-size: 86px;
@@ -67,15 +65,15 @@ a:hover {
 .branding-btn:hover {
   background: var(--secondary-color);
   border: solid 2px var(--primary-color);
-}
-
-.featured-projects h2 {
-  margin-top: 70px;
+  color: var(--primary-color);
 }
 
 .featured-projects a {
   background: var(--secondary-color);
   border: solid 2px var(--primary-color);
+}
+.featured-projects a:hover {
+  color: var(--primary-color);
 }
 .content-wrapper {
   padding: 150px 140px;
@@ -84,13 +82,13 @@ a:hover {
 .content-wrapper h2 {
   font-size: 20px;
 }
+.skillset {
+  margin: 50px;
+}
 .headshot {
   max-height: 60%;
 }
 
-.skillset {
-  margin: 50px;
-}
 .padding-btn {
   padding: 18px 30px;
 }
