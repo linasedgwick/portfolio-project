@@ -3,6 +3,7 @@
   --default-font-family: "Poppins", sans-serif;
   --primary-color: #393e46;
   --secondary-color: #ffe9e3;
+  --btn-padding: 18px 30px;
 }
 body {
   background: radial-gradient(
@@ -16,7 +17,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+.navbar a {
   font-family: var(--heading-font-family);
   font-weight: bold;
 }
@@ -25,7 +27,6 @@ h2 {
   font-size: 40px;
 }
 p {
-  font-weight: normal;
   font-size: 16px;
 }
 img {
@@ -35,27 +36,34 @@ img {
 a {
   color: var(--primary-color);
   text-decoration: none;
-  border-radius: 5px;
   line-height: 23px;
 }
-
-.hero-wrapper {
+footer {
+  margin: 30px 0 90px;
+}
+.hero-wrapper,
+.content-wrapper {
   text-align: center;
+}
+.hero-wrapper {
   padding: 180px 0;
 }
 .hero-wrapper h1 {
   font-size: 86px;
-  font-weight: bold;
 }
 .hero-wrapper h2 {
   font-family: var(--default-font-family);
   font-size: 24px;
-  margin-bottom: 49px;
+  margin-bottom: 50px;
 }
 .navbar a {
   font-family: var(--heading-font-family);
-  font-weight: bold;
   color: var(--primary-color);
+}
+.branding-btn,
+.featured-projects a {
+  padding: var(--btn-padding);
+  border-radius: 5px;
 }
 .branding-btn {
   color: var(--secondary-color);
@@ -76,8 +84,7 @@ a {
   color: var(--primary-color);
 }
 .content-wrapper {
-  padding: 150px 140px;
-  text-align: center;
+  padding: 180px 140px 20px;
 }
 .content-wrapper h2 {
   font-size: 20px;
@@ -87,13 +94,6 @@ a {
 }
 .headshot {
   max-height: 60%;
-}
-
-.padding-btn {
-  padding: 18px 30px;
-}
-footer {
-  margin: 60px 0;
 }
 .email-link {
   font-size: 24px;
@@ -127,6 +127,17 @@ footer {
   }
 }
 @media (max-width: 800px) {
+  /* Custom utility classes */
+  .font-s-ft {
+    font-size: 15px;
+  }
+  .m-d-none {
+    display: none;
+  }
+  /* Custom utility classes */
+  .hero-wrapper {
+    padding: 180px 0 100px;
+  }
   .hero-wrapper h1 {
     font-size: 60px;
   }
@@ -137,26 +148,22 @@ footer {
   .intro-text {
     padding: 0 50px;
   }
+  .featured-projects {
+    margin: 0 !important;
+  }
   .branding-btn {
     font-size: 14px;
     padding: 15px 20px;
   }
-  .featured-projects h2 {
-    font-size: 30px;
-  }
-  .m-d-none {
-    display: none;
-  }
   .content-wrapper {
-    padding: 150px 60px 0px;
+    padding: 150px 60px 0;
   }
   .content-wrapper h1 {
     font-size: 28px;
   }
-  .font-s-ft {
-    font-size: 15px;
+  .content-wrapper h1 {
+    text-align: center !important;
   }
-
   .content-wrapper .col-2 {
     padding: 5px;
   }
@@ -165,14 +172,29 @@ footer {
     display: block;
     margin: 0 auto;
   }
+  .email-link {
+    font-size: 16px;
+    margin-bottom: 20px !important;
+  }
+  .social-links a {
+    font-size: 15px !important;
+    padding: 5px 10px;
+  }
+  footer p {
+    font-size: 13px;
+  }
 }
 @media (max-width: 400px) {
   .content-wrapper {
     padding-top: 80px;
-    padding-bottom: 0;
+    padding-bottom: 5px;
   }
   .content-wrapper .branding-btn {
     font-size: 12px;
     padding: 10px;
+  }
+  .contact {
+    padding-top: 150px;
+    padding-bottom: 150px;
   }
 }
